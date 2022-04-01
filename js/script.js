@@ -66,12 +66,10 @@ axios.get(
     responseType: 'blob'
   }
 ).then((response) => {
-  console.log(response.data)
   return Papa.parse(response.data, 
     {
       header: true,
       complete: function(results) {
-        console.log(results.data)
         let cards = results.data;
         const sucursal_one = document.getElementById('sucursal_one');
         const sucursal_two = document.getElementById('sucursal_two');
@@ -221,7 +219,6 @@ const form = document.getElementById("formWhats");
 form.addEventListener("submit", function(event) {
   event.preventDefault();
   window.location=`https://wa.me/527295158399?text=${encodeURIComponent(form.querySelector("#numberWhats").value)}`;
-  console.log(form.querySelector("#numberWhats").value);
 })
 
 let tabs = document.querySelectorAll('.tabs__toggle'), contents = document.querySelectorAll('.tabs__content');
