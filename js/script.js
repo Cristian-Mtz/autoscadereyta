@@ -6,7 +6,7 @@ menu.onclick = () =>{
   navbar.classList.toggle('active');
 }
 
-setTimeout(activeBanner, 3000);
+// setTimeout(activeBanner, 3000);
 
 function activeBanner() {
   document.querySelector('.login-form-container').classList.toggle('active');
@@ -80,7 +80,7 @@ axios.get(
           if (card.Sucursal === '1' && card.Vendido === 'no') {
             sucursal_one.innerHTML += `
               <div class="swiper-slide box">
-                <img src="${card.Imagen}" alt="${card.Nombre}">
+                <img src="${card.Imagen}" alt="${card.Nombre}" width="100%" height="100%" allowfullscreen="" loading="lazy">
                 <div class="content">
                     <h3>${card.Nombre}</h3>
                     <div class="stars">
@@ -98,7 +98,7 @@ axios.get(
           }else if (card.Sucursal === '2' && card.Vendido === 'no'){
             sucursal_two.innerHTML += `
               <div class="swiper-slide box">
-                <img src="${card.Imagen}" alt="${card.Nombre}">
+                <img src="${card.Imagen}" alt="${card.Nombre}" width="100%" height="100%" allowfullscreen="" loading="lazy">
                 <div class="content">
                     <h3>${card.Nombre}</h3>
                     <div class="stars">
@@ -117,10 +117,10 @@ axios.get(
           if (card.Prioridad === 'si' && card.Vendido === 'no'){
             premium.innerHTML += `
             <div class="swiper-slide box">
-              <img src="${card.Imagen}" alt="${card.Nombre}">
+              <img src="${card.Imagen}" alt="${card.Nombre}" width="100%" height="100%" allowfullscreen="" loading="lazy">
               <div class="content">
                 <h3>${card.Nombre}</h3>
-                <div class="price"> <span>precio : </span>${card.Precio}</div>
+                <div class="price"> <span>Precio : </span>${card.Precio}</div>
                 <p>
                     <span class="fas fa-circle"></span> Sucursal ${card.Sucursal}
                     <span class="fas fa-circle"></span> ${card.Año} <br/>
