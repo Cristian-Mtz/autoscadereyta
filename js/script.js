@@ -223,3 +223,19 @@ form.addEventListener("submit", function(event) {
   window.location=`https://wa.me/527295158399?text=${encodeURIComponent(form.querySelector("#numberWhats").value)}`;
   console.log(form.querySelector("#numberWhats").value);
 })
+
+let tabs = document.querySelectorAll('.tabs__toggle'), contents = document.querySelectorAll('.tabs__content');
+
+tabs.forEach((tab, index) => {
+  tab.addEventListener('click', () => {
+        contents.forEach((content) => {
+              content.classList.remove('is-active');
+        });
+        tabs.forEach((tab) => {
+              tab.classList.remove('is-active');
+        });
+
+        contents[index].classList.add ('is-active');
+        tabs[index].classList.add('is-active');
+  });
+});
