@@ -6,7 +6,7 @@ menu.onclick = () =>{
   navbar.classList.toggle('active');
 }
 
-// setTimeout(activeBanner, 3000);
+setTimeout(activeBanner, 3000);
 
 function activeBanner() {
   document.querySelector('.login-form-container').classList.toggle('active');
@@ -61,7 +61,7 @@ document.querySelector('.home').onmouseleave = (e) =>{
 
 //Info de autos
 axios.get(
-  `https://docs.google.com/spreadsheets/d/e/2PACX-1vRwwWfoZAuujRT8ek5ivqKtvIEsLSVKnX20mXwLNrkNA0QptJ-z_2eVLbOhrsi2BIHN4D76VLxv9Xqx/pub?gid=0&single=true&output=csv`,
+  `https://docs.google.com/spreadsheets/d/e/2PACX-1vRWz6O0ZRQo0TTqQycsGE7hhhr0hKBGIt8EQITWsVzyXywYlI9UZA2LtaWl7YtNMJrOicMv25wgztI2/pub?output=csv`,
   {
     responseType: 'blob'
   }
