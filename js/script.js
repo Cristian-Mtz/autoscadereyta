@@ -91,7 +91,7 @@ axios.get(
                         <i class="fas fa-star-half-alt"></i>
                     </div>
                     <div class="price">${card.Precio}</div>
-                    <a href="https://wa.me/527295158399?text=${encodeURIComponent(text)}" class="btn" target="_blank">Más Información</a>
+                    <a href="https://wa.me/524412155517?text=${encodeURIComponent(text)}" class="btn" target="_blank">Más Información</a>
                 </div>
               </div>
             `
@@ -109,7 +109,7 @@ axios.get(
                         <i class="fas fa-star-half-alt"></i>
                     </div>
                     <div class="price">${card.Precio}</div>
-                    <a href="https://wa.me/527295158399?text=${encodeURIComponent(text)}" class="btn" target="_blank">Más Información</a>
+                    <a href="https://wa.me/524412155517?text=${encodeURIComponent(text)}" class="btn" target="_blank">Más Información</a>
                 </div>
               </div>
             `
@@ -127,7 +127,7 @@ axios.get(
                     <span class="fas fa-circle"></span> ${card.Transmision}
                     <span class="fas fa-circle"></span> ${card.Kilometraje} km
                 </p>
-                <a href="https://wa.me/527295158399?text=${encodeURIComponent(text)}" class="btn" target="_blank">Más Información</a>
+                <a href="https://wa.me/524412155517?text=${encodeURIComponent(text)}" class="btn" target="_blank">Más Información</a>
               </div>
             </div>
             `
@@ -218,7 +218,7 @@ axios.get(
 const form = document.getElementById("formWhats");
 form.addEventListener("submit", function(event) {
   event.preventDefault();
-  window.location=`https://wa.me/527295158399?text=${encodeURIComponent(form.querySelector("#numberWhats").value)}`;
+  window.location=`https://wa.me/524412155517?text=${encodeURIComponent(form.querySelector("#numberWhats").value)}`;
 })
 
 let tabs = document.querySelectorAll('.tabs__toggle'), contents = document.querySelectorAll('.tabs__content');
