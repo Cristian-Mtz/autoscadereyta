@@ -736,6 +736,14 @@ section{
     display: block;
 }
 
+.img__suc{
+    display: none;
+}
+
+.img__suc.is-active{
+    display: block;
+}
+
 
 
 

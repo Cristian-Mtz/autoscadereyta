@@ -221,7 +221,7 @@ form.addEventListener("submit", function(event) {
   window.location=`https://wa.me/524412155517?text=${encodeURIComponent(form.querySelector("#numberWhats").value)}`;
 })
 
-let tabs = document.querySelectorAll('.tabs__toggle'), contents = document.querySelectorAll('.tabs__content');
+let tabs = document.querySelectorAll('.tabs__toggle'), contents = document.querySelectorAll('.tabs__content'), images = document.querySelectorAll('.img__suc');
 
 tabs.forEach((tab, index) => {
   tab.addEventListener('click', () => {
@@ -231,8 +231,12 @@ tabs.forEach((tab, index) => {
         tabs.forEach((tab) => {
               tab.classList.remove('is-active');
         });
+        images.forEach((tab) => {
+              tab.classList.remove('is-active');
+        });
 
         contents[index].classList.add ('is-active');
         tabs[index].classList.add('is-active');
+        images[index].classList.add('is-active');
   });
 });
